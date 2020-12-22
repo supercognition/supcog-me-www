@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ### Welcome to SuperCognition
 
 SuperCognition is a fun podcast by two quixotic individuals ([Aubrey Falconer](/aubrey-falconer) and [Zach Doty](/zach-doty) who are facinated by AI and other fun topics. This podcast is our forum to explore fun and futuristic ideas with erudite polymaths from all disciplines.
@@ -23,7 +27,7 @@ Future civilizations will be peopled by humans who've evolved far beyond our cur
     - How many minds can we meld into a hive?
 - **[Artificial Intelligence](/artificial-intelligence)**
 "Humans are in a continuous race against oxidation. We can't outrun it, so we have to outthink it" - Joscha Bach
-- **New societial operating system**
+- **New societal operating system**
     - Money is the dopamine of our collective intelligence. How do we fix it?
     - What does a post-rivalrous world look like? How do we work backwards from there in order to chart a course forwards from the present?
     - 18th century systems are failing to solve our 21st century concerns. What can we learn from decentralized ledgers and smart contracts to reimagine government & law?
