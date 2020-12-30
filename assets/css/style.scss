@@ -2,3 +2,43 @@
 ---
 
 @import 'jekyll-theme-cayman';
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+#splash-body {
+  padding: 10px;
+  background: #0093e9;
+  background: radial-gradient(at top left, #0093e9 0%, #329d91 100%);
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: Quicksand, sans-serif;
+}
+
+#splash-header, #splash-footer {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+#splash-logo {
+  height: 175px;
+  margin: 3% auto auto;
+  background-image: url(/assets/img/splash-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#splash-footer {
+  font-size: .8em;
+}
+
+@media only screen and (max-width: 1000px) {
+  #splash-logo {
+    width: 30%;
+    height: 0;
+    min-width: 200px;
+    min-height: 100px;
+    padding-bottom: 22%;
+  }
+}
