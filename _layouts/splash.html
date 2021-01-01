@@ -1,69 +1,103 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: " en-US" }}">
-    <head>
-        {% if site.google_analytics %}
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
+<head>
+    {% if site.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-          function gtag() {
-            dataLayer.push(arguments);
-          }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-          gtag('js', new Date());
-          gtag('config', '{{ site.google_analytics }}');
-        </script>
-        {% endif %}
-        <meta charset="UTF-8">
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+    <meta charset="UTF-8">
 
-        {% seo %}
+    {% seo %}
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#157878">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    </head>
-    <body id="splash-body">
-        <header id="splash-header">
-            <div id="splash-logo">
-                &nbsp;
-            </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-            <div id="splash-content">
-                {{ content }}
-            </div>
-        </header>
+    <!-- Iconify integration -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
-        <div id="splash-columns">
-            <div id="splash-left">
-                <div class="splash-heading">
-                    Your hosts
-                </div>
-                <div class="splash-section">
-                    ...
-                </div>
-            </div>
+    <!-- Mailchimp subscription popup integration -->
+    <script id="mcjs">!function (c, h, i, m, p) {
+      m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p);
+    }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/a16788479a2e767fa32257f66/d164db4c06710eca82f5e4581.js");</script>
+</head>
+<body id="splash-body">
+<header id="splash-header">
+    <div id="splash-logo">
+        &nbsp;
+    </div>
 
-            <div id="splash-right">
-                <div class="splash-heading">
-                    Watch/Listen
-                </div>
-                <div class="splash-section">
-                    ...
-                </div>
+    <div id="splash-content">
+        {{ content }}
+    </div>
+</header>
 
-                <div class="splash-heading">
-                    Join us
-                </div>
-                <div class="splash-section">
-                    ...
-                </div>
+<div id="splash-columns">
+    <div id="splash-left">
+        <div class="splash-heading">
+            Your hosts
+        </div>
+        <div class="splash-section">
+            ...
+        </div>
+    </div>
 
-            </div>
+    <div id="splash-right">
+        <div class="splash-heading">
+            Watch/listen
+        </div>
+        <div class="splash-section">
+            <a class="splash-item" target="_blank" href="">
+                <span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span>
+                YouTube
+            </a>
+            <a class="splash-item" target="_blank" href="">
+                <span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span>
+                Apple Podcasts
+            </a>
+            <a class="splash-item" target="_blank" href="">
+                <span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span>
+                Spotify
+            </a>
+            <a class="splash-item" target="_blank" href="">
+                <span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span>
+                Pod RSS
+            </a>
         </div>
 
-        <footer id="splash-footer">
-            Copyright 2021 by Aubrey Falconer & Zach Doty
-        </footer>
-    </body>
+        <div class="splash-heading">
+            Join us
+        </div>
+        <div class="splash-section">
+            <a class="splash-item" target="_blank" href="">
+                <span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span>
+                Wiki
+            </a>
+            <a class="splash-item" target="_blank" href="">
+                <span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span>
+                Discord
+            </a>
+            <a class="splash-item" target="_blank" href="">
+                <span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span>
+                Newsletter
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<footer id="splash-footer">
+    Copyright 2021 by Aubrey Falconer & Zach Doty
+</footer>
+</body>
 </html>

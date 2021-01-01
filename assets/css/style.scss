@@ -30,6 +30,7 @@
 }
 
 #splash-footer {
+  margin-top: 2em;
   font-size: .8em;
 }
 
@@ -41,4 +42,46 @@
     min-height: 100px;
     padding-bottom: 22%;
   }
+}
+
+#splash-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  min-height: 70vh;
+}
+
+#splash-columns > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+}
+
+.splash-heading {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.splash-section {
+  padding-left: 1em;
+}
+
+.splash-item {
+  display: inline-block;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+a {
+  color: white;
+  /*     position: relative; */
+  transition: transform .2s;
+}
+
+a:hover {
+  transform: scale(1.1);
 }
