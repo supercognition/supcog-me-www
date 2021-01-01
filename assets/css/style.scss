@@ -12,6 +12,7 @@
   min-height: 100vh;
   color: #ffffff;
   font-family: Quicksand, sans-serif;
+  font-size: 1.1em;
 }
 
 #splash-header, #splash-footer {
@@ -43,13 +44,19 @@
     padding-bottom: 22%;
   }
 }
+@media only screen and (min-width: 1500px) {
+  #splash-content {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
 
 #splash-columns {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
   min-height: 70vh;
 }
@@ -72,16 +79,43 @@
 
 .splash-item {
   display: inline-block;
-  height: 2.5em;
-  line-height: 2.5em;
+  height: 2em;
+  line-height: 2em;
+  float: left;
+  clear: both;
 }
 
-a {
+.splash-host img {
+  max-width: 8em;
+  transition: transform .2s;
+
+}
+
+.splash-item svg {
+  margin-right: .5em;
+  font-size: 1.2em;
+  vertical-align: text-top;
+}
+
+#splash-body a {
   color: white;
-  /*     position: relative; */
   transition: transform .2s;
 }
 
-a:hover {
+#splash-body a.disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+#splash-body a:hover {
   transform: scale(1.1);
+}
+
+#splash-body a:hover img {
+  transform: scale(1.1);
+}
+
+#splash-body a.disabled:hover {
+  transform: none;
+  text-decoration: none;
 }
